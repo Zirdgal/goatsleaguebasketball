@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>G.O.A.T's League</title>
+    
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="gameList.css">
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script type="module" src="matches/match-0004.js"></script>
+    </head>
+<body>
+    <div id="topbar-container">
+        <a id="logo" href="../index.html"><img src="../img/logo.png" class="topbar-img"></a>
+        <button id="theme-toggle-button"><img src="../img/icons/moon.png" class="topbar-img" id="theme-toggle-button-image"></button>
+        <button id="settings" onclick="toggleDropdown()"><img src="../img/settings.png" class="topbar-img" id="settings-img"></button>
+    </div>
+
+    <div id="dropdown" class="dropdown-menu">
+        <div id="dropdown-content">
+            <div id="dropdown-games-container" class="dropdown-container">
+                <a href="gameList.html">Spēles</a>
+            </div>
+            <div id="dropdown-teams-container" class="dropdown-container">
+                <a href="teamList.html">Komandas</a>
+            </div>
+            <div id="dropdown-players-container" class="dropdown-container">
+                <a href="playerList.html">Spēlētāji</a>
+            </div>
+            <div id="dropdown-stats-container" class="dropdown-container">
+                <a href="statsList.html">Tabula</a>
+            </div>
+            <div id="dropdown-news-container" class="dropdown-container">
+                <a href="newsList.html">Ziņas</a>
+            </div>
+            <div id="dropdown-links-container" class="dropdown-container">
+                <a href="mediaList.html">Medija</a>
+            </div>
+            <div id="dropdown-rules-container" class="dropdown-container">
+                <a href="rulesList.html">Noteikumi</a>
+            </div>
+            <div id="dropdown-links-container" class="dropdown-container">
+                <a href="sitesList.html">Ārējās saites</a>
+            </div>
+        </div>
+    </div>
+
+<div id="everything-container">
+    <h2>Visas Spēles:</h2>
+    <div id="all-matches-container">
+        <br><br>
+        <div class="all-matches-scrollable">
+            <a class="all-matches-card" href="matches/match-0000.html">
+                <div class="all-matches-card-club-logo">
+                    <img src="../img/testimg.png">
+                    <div>Team 1</div>
+                </div>
+                <div class="all-matches-card-game-info">
+                    <div class="all-matches-card-date">dd/mm xx:xx</div>
+                    <div class="all-matches-card-score">0 - 0</div>
+                    <div class="all-matches-card-place">Testing spēle</div>
+                </div>
+                <div class="all-matches-card-club-logo">
+                    <img src="../img/testimg.png">
+                    <div>Team 2</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function toggleDropdown() {
+        var dropdown = document.getElementById('dropdown');
+        dropdown.classList.toggle('active');
+        document.body.classList.toggle('dropdown-open'); // Toggle body class to allow scroll
+    }
+</script>
+<script src="../themeTogglePages.js"></script>
+</body>
+</html>

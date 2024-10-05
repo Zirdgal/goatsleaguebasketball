@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>G.O.A.T's League</title>
+
+    <link id="mobileCSS" rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/fe50138296.js" crossorigin="anonymous"></script>
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById('dropdown');
+            dropdown.classList.toggle('active');
+            document.body.classList.toggle('dropdown-open'); // Toggle body class to allow scroll
+        }
+    </script>
+</head>
+<body>
+
+
+    <div id="topbar-container">
+        <a id="logo" href="index.html"><img src="img/logo.png" class="topbar-img"></a>
+        <button id="theme-toggle-button"><img src="img/icons/moon.png" class="topbar-img" id="theme-toggle-button-image"></button>
+        <button id="settings" onclick="toggleDropdown()"><img src="img/settings.png" class="topbar-img" id="settings-img"></button>
+    </div>
+
+
+
+
+    <div id="dropdown" class="dropdown-menu">
+        <div id="dropdown-content">
+            <div id="dropdown-games-container" class="dropdown-container">
+                <a href="pages/gameList.html">Spēles</a>
+            </div>
+            <div id="dropdown-teams-container" class="dropdown-container">
+                <a href="pages/teamList.html">Komandas</a>
+            </div>
+            <div id="dropdown-players-container" class="dropdown-container">
+                <a href="pages/playerList.html">Spēlētāji</a>
+            </div>
+            <div id="dropdown-stats-container" class="dropdown-container">
+                <a href="pages/statsList.html">Tabula</a>
+            </div>
+            <div id="dropdown-news-container" class="dropdown-container">
+                <a href="pages/newsList.html">Ziņas</a>
+            </div>
+            <div id="dropdown-links-container" class="dropdown-container">
+                <a href="pages/mediaList.html">Medija</a>
+            </div>
+            <div id="dropdown-rules-container" class="dropdown-container">
+                <a href="pages/rulesList.html">Noteikumi</a>
+            </div>
+            <div id="dropdown-links-container" class="dropdown-container">
+                <a href="pages/sitesList.html">Ārējās saites</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<div id="everything-container">
+        <h2>Nākamās spēles:</h2>
+    <div id="recent-matches-container">
+        <div class="recent-matches-scrollable">
+            <a class="recent-matches-card" href="#">
+                <div class="recent-matches-card-club-logo">
+                    <img src="">
+                    <div></div>
+                </div>
+                <div class="recent-matches-card-game-info">
+                    <div class="recent-matches-card-date"></div>
+                    <div class="recent-matches-card-score"><p>Vēl, nekā nav!</p></div>
+                    <div class="recent-matches-card-place"></div>
+                </div>
+                <div class="recent-matches-card-club-logo">
+                    <img src="">
+                    <div></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <h2>G.O.A.T. Komandas:</h2>
+    <div id="teams-container">
+        <div class="teams-scrollable">
+            <a class="teams-card" href="#">
+                <div class="teams-card-img"><img src="img/vairog-noBG.png"></div>
+                <div class="team-card-name">BK Vairogu Šķaidītāji</div>
+            </a>
+            <a class="teams-card" href="#">
+                <div class="teams-card-img"><img src="img/elite-noBG.png"></div>
+                <div class="team-card-name">BK Elite 3.</div>
+            </a>
+            <a class="teams-card" href="#">
+                <div class="teams-card-img"><img src="img/sodi-noBG.png"></div>
+                <div class="team-card-name">BK Sodiņu Meistari 2.</div>
+            </a>
+            <a class="teams-card" href="#">
+                <div class="teams-card-img"><img src="img/lozmeteji-noBG.png"></div>
+                <div class="team-card-name">BK Ložmetēji</div>
+            </a>
+        </div>
+    </div>
+    <h2>G.O.A.T. Spēlētāji:</h2>
+    <div id="players-container">
+        <div class="players-scrollable">
+            <a class="players-card-full" href="page2.html">
+                <div class="players-card-title"><p class="players-card-title-text">Lorem Ipsum</p><img src="img/icons/flag.png" class="leader-icon"></div>
+                <div class="players-card">
+                    <div class="players-card-img"><img src="img/nophoto.png"></div>
+                    <div class="players-card-name">Template</div>
+                    <div class="players-card-nr">#111</div>
+                </div>
+            </a>
+            <a class="players-card-full" href="page2.html">
+                <div class="players-card-title"><p class="players-card-title-text">Lorem Ipsum</p><img src="img/icons/flag.png" class="leader-icon"></div>
+                <div class="players-card">
+                    <div class="players-card-img"><img src="img/nophoto.png"></div>
+                    <div class="players-card-name">Template</div>
+                    <div class="players-card-nr">#111</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <h2>G.O.A.T. Ziņas:</h2>
+    <div class="index-news-container">
+        <div class="index-news-scrollable">
+            <a class="index-news-card" href="pages/news/news-0001.html">
+                <img src="img/news-img/League-new-teams.png" class="index-news-card-img">
+                <div class="index-news-card-text">G.O.A.Ts League</div>
+                <div class="index-news-card-text">basketbols ir tagad</div>
+                <div class="index-news-card-text">sācies! <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </a>
+        </div>
+    </div>
+</div>
+<script src="themeToggleGlobal.js"></script>
+</body>
+</html>

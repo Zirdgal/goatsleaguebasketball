@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>G.O.A.T's League</title>
+    
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script type="module">
+            import { game } from "../../data/data-0000.js";
+            import { displayMatchStatistics } from "./match-handler.js";
+            displayMatchStatistics(game);
+        </script>
+    </head>
+    <style>
+        #score-score {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    </style>
+<body>
+    <div id="topbar-container">
+        <a id="logo" href="../../index.html"><img src="../../img/logo.png" class="topbar-img"></a>
+        <button id="theme-toggle-button"><img src="../../img/icons/moon.png" class="topbar-img" id="theme-toggle-button-image"></button>
+        <button id="settings" onclick="toggleDropdown()"><img src="../../img/settings.png" class="topbar-img" id="settings-img"></button>
+    </div>
+
+    <div id="dropdown" class="dropdown-menu">
+        <div id="dropdown-content">
+            <div id="dropdown-games-container" class="dropdown-container">
+                <a href="../gameList.html">Spēles</a>
+            </div>
+            <div id="dropdown-teams-container" class="dropdown-container">
+                <a href="../teamList.html">Komandas</a>
+            </div>
+            <div id="dropdown-players-container" class="dropdown-container">
+                <a href="../playerList.html">Spēlētāji</a>
+            </div>
+            <div id="dropdown-stats-container" class="dropdown-container">
+                <a href="../statsList.html">Tabula</a>
+            </div>
+            <div id="dropdown-news-container" class="dropdown-container">
+                <a href="../newsList.html">Ziņas</a>
+            </div>
+            <div id="dropdown-rules-container" class="dropdown-container">
+                <a href="../rulesList.html">Noteikumi</a>
+            </div>
+            <div id="dropdown-links-container" class="dropdown-container">
+                <a href="../sitesList.html">Ārējās saites</a>
+            </div>
+        </div>
+    </div>
+
+<div id="everything-container">
+    <div id="score-container">
+        <div class="score-logo">
+            <a href="../teams/.html"><img id="team1-img" src="../../img/nophoto.png" class="score-logo-image"></a>
+            <div id="team1-name">Team1</div>
+        </div>
+        <div id="score-info">
+            <div id="score-date"></div>
+            <div id="score-score"></div>
+            <div id="score-place"></div>
+        </div>
+        <div class="score-logo">
+            <a href="../teams/.html"><img id="team2-img" src="../../img/nophoto.png" class="score-logo-image"></a>
+            <div id="team2-name">Team2</div>
+        </div>
+    </div>
+    <h2>Komandu Sastāvi:</h2>
+    <div id="team-players-container">
+        <div class="team-players-scrollable">
+            <a class="team-players-card" id="player-card-1" href="../../page2.html">
+                <div class="players-card-img" id="player-img-1"><img src="../../img/nophoto.png"></div>
+                <div class="players-card-name" id="player-name-1">Player</div>
+                <div class="players-card-nr" id="player-nr-1">#</div>
+            </a>
+            <a class="team-players-card"id="player-card-2" href="../../page2.html">
+                <div class="players-card-img" id="player-img-2"><img src="../../img/nophoto.png"></div>
+                <div class="players-card-name" id="player-name-2">Player</div>
+                <div class="players-card-nr" id="player-nr-2">#</div>
+            </a>
+            <a class="team-players-card" id="player-card-3" href="../../page2.html">
+                <div class="players-card-img" id="player-img-3"><img src="../../img/nophoto.png"></div>
+                <div class="players-card-name" id="player-name-3">Player</div>
+                <div class="players-card-nr" id="player-nr-3">#</div>
+            </a>
+        </div>
+        <br><br>
+        <div class="team-players-scrollable">
+            <a class="team-players-card" id="player-card-4" href="../../page2.html">
+                <div class="players-card-img" id="player-img-4"><img src="../../img/nophoto.png"></div>
+                <div class="players-card-name" id="player-name-4">Player</div>
+                <div class="players-card-nr" id="player-nr-4">#</div>
+            </a>
+            <a class="team-players-card" id="player-card-5" href="../../page2.html">
+                <div class="players-card-img" id="player-img-5"><img src="../../img/nophoto.png"></div>
+                <div class="players-card-name" id="player-name-5">Player</div>
+                <div class="players-card-nr" id="player-nr-5">#</div>
+            </a>
+            <a class="team-players-card" id="player-card-6" href="../../page2.html">
+                <div class="players-card-img" id="player-img-6"><img src="../../img/nophoto.png"></div>
+                <div class="players-card-name" id="player-name-6">Player</div>
+                <div class="players-card-nr" id="player-nr-6">#</div>
+            </a>
+        </div>
+    </div>
+    <h2>Statistika:</h2>
+    <div class="game-statistics-container">
+        <table>
+            <tr>
+                <th>Vārds</th>
+                <th>Punkti</th>
+                <th>Assisti</th>
+                <th>Reboundi</th>
+                <th>Bloki</th>
+                <th>Turnoveri</th>
+                <th>Steali</th>
+                <th>Sodi</th>
+            </tr>
+            <tr>
+                <td id="stats-player-1-name">player #</td>
+                <td id="stats-player-1-points">0</td>
+                <td id="stats-player-1-assists">0</td>
+                <td id="stats-player-1-rebounds">0</td>
+                <td id="stats-player-1-blocks">0</td>
+                <td id="stats-player-1-turnovers">0</td>
+                <td id="stats-player-1-steals">0</td>
+                <td id="stats-player-1-fouls">0</td>
+            </tr>
+            <tr>
+                <td id="stats-player-2-name">player #</td>
+                <td id="stats-player-2-points">0</td>
+                <td id="stats-player-2-assists">0</td>
+                <td id="stats-player-2-rebounds">0</td>
+                <td id="stats-player-2-blocks">0</td>
+                <td id="stats-player-2-turnovers">0</td>
+                <td id="stats-player-2-steals">0</td>
+                <td id="stats-player-2-fouls">0</td>
+            </tr>
+            <tr>
+                <td id="stats-player-3-name">player #</td>
+                <td id="stats-player-3-points">0</td>
+                <td id="stats-player-3-assists">0</td>
+                <td id="stats-player-3-rebounds">0</td>
+                <td id="stats-player-3-blocks">0</td>
+                <td id="stats-player-3-turnovers">0</td>
+                <td id="stats-player-3-steals">0</td>
+                <td id="stats-player-3-fouls">0</td>
+            </tr>
+            <tr>
+                <td id="stats-player-4-name">player #</td>
+                <td id="stats-player-4-points">0</td>
+                <td id="stats-player-4-assists">0</td>
+                <td id="stats-player-4-rebounds">0</td>
+                <td id="stats-player-4-blocks">0</td>
+                <td id="stats-player-4-turnovers">0</td>
+                <td id="stats-player-4-steals">0</td>
+                <td id="stats-player-4-fouls">0</td>
+            </tr>
+            <tr>
+                <td id="stats-player-5-name">player #</td>
+                <td id="stats-player-5-points">0</td>
+                <td id="stats-player-5-assists">0</td>
+                <td id="stats-player-5-rebounds">0</td>
+                <td id="stats-player-5-blocks">0</td>
+                <td id="stats-player-5-turnovers">0</td>
+                <td id="stats-player-5-steals">0</td>
+                <td id="stats-player-5-fouls">0</td>
+            </tr>
+            <tr>
+                <td id="stats-player-6-name">player #</td>
+                <td id="stats-player-6-points">0</td>
+                <td id="stats-player-6-assists">0</td>
+                <td id="stats-player-6-rebounds">0</td>
+                <td id="stats-player-6-blocks">0</td>
+                <td id="stats-player-6-turnovers">0</td>
+                <td id="stats-player-6-steals">0</td>
+                <td id="stats-player-6-fouls">0</td>
+            </tr>
+        </table> 
+    </div>
+    <h2>Mēdija:</h2>
+    <div class="game-video-container">
+        <iframe class="game-video"
+            src="#">
+        </iframe>
+    </div>
+</div>
+<script>
+    function toggleDropdown() {
+        var dropdown = document.getElementById('dropdown');
+        dropdown.classList.toggle('active');
+        document.body.classList.toggle('dropdown-open'); // Toggle body class to allow scroll
+    }
+</script>
+<script src="../../themeTogglePagesLowest.js"></script>
+</body>
+</html>
