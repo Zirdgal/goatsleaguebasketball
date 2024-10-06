@@ -733,8 +733,9 @@ table, th, td {
     }
     .players-card-full {
         width: 15vw;
-        height: 14vw;
+        height: 15vw;
         padding: 2%;
+        padding-bottom: 3%;
     }
     .index-news-container {
         margin-left:0.5%;

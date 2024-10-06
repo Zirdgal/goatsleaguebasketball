@@ -4,14 +4,62 @@
         <title>G.O.A.T's League</title>
     
         <link rel="stylesheet" href="../style.css">
-        <link rel="stylesheet" href="gameList.css">
         <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <script type="module" src="matches/match-0004.js"></script>
     </head>
+
+<style>
+#all-matches-container {
+    max-width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+}
+.all-matches-scrollable {
+    display: inline-flex;
+    white-space: nowrap;
+    width: max-content;
+    overflow: none;
+}
+.all-matches-card {
+    width: 95vw;
+    padding: 5%;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin-right: 20px;
+    white-space: normal;
+    overflow-x: hidden;
+}
+
+.all-matches-card-club-logo {
+    width: 40%;
+    height: auto;
+    text-align: center;
+}
+.all-matches-card-club-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.all-matches-card-game-info {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.all-matches-card-date, .all-matches-card-score, .all-matches-card-place {
+    margin: 0 20px;
+    padding: 10px 0;
+}    
+#center-text {
+    margin: 2vh;
+}
+</style>
+
 <body>
     <div id="topbar-container">
         <a id="logo" href="../index.html"><img src="../img/logo.png" class="topbar-img"></a>
@@ -49,26 +97,9 @@
     </div>
 
 <div id="everything-container">
-    <h2>Visas Spēles:</h2>
-    <div id="all-matches-container">
-        <!--<br><br>
-        <div class="all-matches-scrollable">
-            <a class="all-matches-card" href="matches/match-0000.html">
-                <div class="all-matches-card-club-logo">
-                    <img src="../img/testimg.png">
-                    <div>Team 1</div>
-                </div>
-                <div class="all-matches-card-game-info">
-                    <div class="all-matches-card-date">dd/mm xx:xx</div>
-                    <div class="all-matches-card-score">0 - 0</div>
-                    <div class="all-matches-card-place">Testing spēle</div>
-                </div>
-                <div class="all-matches-card-club-logo">
-                    <img src="../img/testimg.png">
-                    <div>Team 2</div>
-                </div>
-            </a>
-        </div> -->
+    <h2>G.O.A.T's League Noteikumi:</h2>
+    <div id="center-text">
+        <p>Vēl nekā nav</p>
     </div>
 </div>
 

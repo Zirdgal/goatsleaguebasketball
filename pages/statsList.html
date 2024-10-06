@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>G.O.A.T's League</title>
+    
+        <link rel="stylesheet" href="../style.css">
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script type="module" src="statsList.js"></script>
+    </head>
+
+    <style>
+    
+.all-statistics-container {
+    background-color: var(--secondary-color);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+    </style>
+
+<body>
+    <div id="topbar-container">
+        <a id="logo" href="../index.html"><img src="../img/logo.png" class="topbar-img"></a>
+        <button id="theme-toggle-button"><img src="../img/icons/moon.png" class="topbar-img" id="theme-toggle-button-image"></button>
+        <button id="settings" onclick="toggleDropdown()"><img src="../img/settings.png" class="topbar-img" id="settings-img"></button>
+    </div>
+
+    <div id="dropdown" class="dropdown-menu">
+        <div id="dropdown-content">
+            <div id="dropdown-games-container" class="dropdown-container">
+                <a href="gameList.html">Spēles</a>
+            </div>
+            <div id="dropdown-teams-container" class="dropdown-container">
+                <a href="teamList.html">Komandas</a>
+            </div>
+            <div id="dropdown-players-container" class="dropdown-container">
+                <a href="playerList.html">Spēlētāji</a>
+            </div>
+            <div id="dropdown-stats-container" class="dropdown-container">
+                <a href="statsList.html">Tabula</a>
+            </div>
+            <div id="dropdown-news-container" class="dropdown-container">
+                <a href="newsList.html">Ziņas</a>
+            </div>
+            <div id="dropdown-links-container" class="dropdown-container">
+                <a href="mediaList.html">Medija</a>
+            </div>
+            <div id="dropdown-rules-container" class="dropdown-container">
+                <a href="rulesList.html">Noteikumi</a>
+            </div>
+            <div id="dropdown-links-container" class="dropdown-container">
+                <a href="sitesList.html">Ārējās saites</a>
+            </div>
+        </div>
+    </div>
+
+<div id="everything-container">
+    <br>
+    <br>
+    <h2>Statistiku Tabula:</h2>
+    <h3>1. sezonā:</h3>
+    <div class="all-statistics-container">
+        <table>
+            <tr>
+                <th>Poz.</th>
+                <th>Nosaukums</th>
+                <th>Spēles</th>
+                <th>Uzvaras</th>
+                <th>Zaudes</th>
+                <th>Punkti</th>
+                <th>Assisti</th>
+                <th>Reboundi</th>
+                <th>Bloki</th>
+                <th>Turnoveri</th>
+                <th>Steali</th>
+                <th>Sodi</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td><div class="team-name-container">
+                    <img class="text-icon-image" src="../img/elite-noBG.png"><div class="team-name-text">BK Elite 3.</div>
+                </div></td>
+                <td id="stats-elite-games-played">-</td>
+                <td id="stats-elite-games-won">-</td>
+                <td id="stats-elite-games-lost">-</td>
+                <td id="stats-elite-points">-</td>
+                <td id="stats-elite-assist">-</td>
+                <td id="stats-elite-rebounds">-</td>
+                <td id="stats-elite-blocks">-</td>
+                <td id="stats-elite-turnovers">-</td>
+                <td id="stats-elite-steals">-</td>
+                <td id="stats-elite-fouls">-</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td><div class="team-name-container">
+                    <img class="text-icon-image" src="../img/lozmeteji-noBG.png"><div class="team-name-text">BK Ložmetēji</div>
+                </div></td>
+                <td id="stats-lozmeteji-games-played">-</td>
+                <td id="stats-lozmeteji-games-won">-</td>
+                <td id="stats-lozmeteji-games-lost">-</td>
+                <td id="stats-lozmeteji-points">-</td>
+                <td id="stats-lozmeteji-assist">-</td>
+                <td id="stats-lozmeteji-rebounds">-</td>
+                <td id="stats-lozmeteji-blocks">-</td>
+                <td id="stats-lozmeteji-turnovers">-</td>
+                <td id="stats-lozmeteji-steals">-</td>
+                <td id="stats-lozmeteji-fouls">-</td>
+            </tr>
+             <tr>
+                <td>3.</td>
+                <td><div class="team-name-container">
+                    <img class="text-icon-image" src="../img/sodi-noBG.png"><div class="team-name-text">BK Sodiņu Meistari 2.</div>
+                </div></td>
+                <td id="stats-sodi-games-played">-</td>
+                <td id="stats-sodi-games-won">-</td>
+                <td id="stats-sodi-games-lost">-</td>
+                <td id="stats-sodi-points">-</td>
+                <td id="stats-sodi-assist">-</td>
+                <td id="stats-sodi-rebounds">-</td>
+                <td id="stats-sodi-blocks">-</td>
+                <td id="stats-sodi-turnovers">-</td>
+                <td id="stats-sodi-steals">-</td>
+                <td id="stats-sodi-fouls">-</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td><div class="team-name-container">
+                    <img class="text-icon-image" src="../img/vairog-noBG.png"><div class="team-name-text">BK Vairogu Šķaidītāji</div>
+                </div></td>
+                <td id="stats-vairog-games-played">-</td>
+                <td id="stats-vairog-games-won">-</td>
+                <td id="stats-vairog-games-lost">-</td>
+                <td id="stats-vairog-points">-</td>
+                <td id="stats-vairog-assist">-</td>
+                <td id="stats-vairog-rebounds">-</td>
+                <td id="stats-vairog-blocks">-</td>
+                <td id="stats-vairog-turnovers">-</td>
+                <td id="stats-vairog-steals">-</td>
+                <td id="stats-vairog-fouls">-</td>
+            </tr>
+        </table> 
+    </div>
+ </div>
+
+<script>
+    function toggleDropdown() {
+        var dropdown = document.getElementById('dropdown');
+        dropdown.classList.toggle('active');
+        document.body.classList.toggle('dropdown-open'); // Toggle body class to allow scroll
+    }
+</script>
+<script src="../themeTogglePages.js"></script>
+</body>
+</html>

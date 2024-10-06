@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>G.O.A.T's League</title>
+    
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script type="module" src="sperma.js"></script>
+        <script type="module" src="../matches/match-0004.js"></script>
+        <script type="module" src="../matches/match-0005.js"></script>
+    </head>
+    <style>
+        .players-card {
+            width: 45vw;
+            height: 50vw;
+            padding: 1%;
+            background-color: var(--secondary-color);
+            border-radius: 15px;
+            margin-right: 20px;
+            white-space: normal;
+            text-align: center;
+        }
+        @media (min-width: 1200px) {
+            .players-card {
+                width: 15vw;
+                height: 14vw;
+                padding: 2%;
+            }
+        }
+        </style>
+<body>
+    <div id="topbar-container">
+        <a id="logo" href="../../index.html"><img src="../../img/logo.png" class="topbar-img"></a>
+        <button id="theme-toggle-button"><img src="../../img/icons/moon.png" class="topbar-img" id="theme-toggle-button-image"></button>
+        <button id="settings" onclick="toggleDropdown()"><img src="../../img/settings.png" class="topbar-img" id="settings-img"></button>
+    </div>
+
+    <div id="dropdown" class="dropdown-menu">
+        <div id="dropdown-content">
+            <div id="dropdown-games-container" class="dropdown-container">
+                <a href="../gameList.html">Spēles</a>
+            </div>
+            <div id="dropdown-teams-container" class="dropdown-container">
+                <a href="../teamList.html">Komandas</a>
+            </div>
+            <div id="dropdown-players-container" class="dropdown-container">
+                <a href="../playerList.html">Spēlētāji</a>
+            </div>
+            <div id="dropdown-stats-container" class="dropdown-container">
+                <a href="../statsList.html">Tabula</a>
+            </div>
+            <div id="dropdown-news-container" class="dropdown-container">
+                <a href="../newsList.html">Ziņas</a>
+            </div>
+            <div id="dropdown-links-container" class="dropdown-container">
+                <a href="../mediaList.html">Medija</a>
+            </div>
+            <div id="dropdown-rules-container" class="dropdown-container">
+                <a href="../rulesList.html">Noteikumi</a>
+            </div>
+            <div id="dropdown-links-container" class="dropdown-container">
+                <a href="../sitesList.html">Ārējās saites</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="everything-container">
+        <div id="team-highlight">
+            <div id="page-highlight">
+                <img src="../../img/FK-spermotozidi-nobg.png">
+                <div id="page-highlight-text">
+                    <h2>FK Spermatozīdi</h2>
+                    <div>Dibināts 2024. gada aprīlī</div>
+                </div>
+            </div>
+        </div>
+        <h2>Komandas Sastāvs:</h2>
+        <div id="players-container">
+            <div class="players-scrollable">
+                <a class="players-card" href="../../page2.html">
+                    <div class="players-card-img"><img src="../../img/portraits/zibens.png"></div>
+                    <div class="players-card-name">Zibens #3</div>
+                    <div class="players-card-pos">Captain</div>
+                </a>
+                <a class="players-card" href="../../page2.html">
+                    <div class="players-card-img"><img src="../../img/portraits/burkans.png"></div>
+                    <div class="players-card-name">Burkāns #15</div>
+                    <div class="players-card-pos">Assistant</div>
+                </a>
+                <a class="players-card" href="../../page2.html">
+                    <div class="players-card-img"><img src="../../img/portraits/key-z.png"></div>
+                    <div class="players-card-name">Key-Z #19</div>
+                    <div class="players-card-pos">Player</div>
+                </a>
+                <a class="players-card" href="../../page2.html">
+                    <div class="players-card-img"><img src="../../img/portraits/kolegis.png"></div>
+                    <div class="players-card-name">Kolēģis #2</div>
+                    <div class="players-card-pos">Reserve</div>
+                </a>
+            </div>
+        </div>
+        <h2>Komandas Spēles:</h2>
+        <div id="recent-matches-container">
+            <div class="recent-matches-scrollable"> 
+                <a class="recent-matches-card" href="../matches/match-0005.html">
+                    <div class="recent-matches-card-club-logo">
+                        <img src="../../img/FK-spermotozidi-nobg.png">
+                        <div>Sperma</div>
+                    </div>
+                    <div class="recent-matches-card-game-info">
+                        <div class="recent-matches-card-date">17/05 11:45</div>
+                        <div class="recent-matches-card-score"><p id="match0005-text"></p></div>
+                        <div class="recent-matches-card-place">Sezonas spēle</div>
+                    </div>
+                    <div class="recent-matches-card-club-logo">
+                        <img src="../../img/FK-Faze-Latvija-nobg.png">
+                        <div>Faze LV</div>
+                    </div>
+                </a>
+                <a class="recent-matches-card" href="../matches/match-0005.html">
+                    <div class="recent-matches-card-club-logo">
+                        <img src="../../img/FK-spermotozidi-nobg.png">
+                        <div>Sperma</div>
+                    </div>
+                    <div class="recent-matches-card-game-info">
+                        <div class="recent-matches-card-date">17/05 11:45</div>
+                        <div class="recent-matches-card-score"><p id="match0005-text"></p></div>
+                        <div class="recent-matches-card-place">Sezonas spēle</div>
+                    </div>
+                    <div class="recent-matches-card-club-logo">
+                        <img src="../../img/FK-Faze-Latvija-nobg.png">
+                        <div>Faze LV</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <h2>Komandas Statistika:</h2>
+        <div class="personal-team-stats-list-container">
+            <h3 id="sperma-win">Uzvaras:</h3>
+            <h3 id="sperma-loss">Zaudes:</h3>
+            <h3 id="sperma-goal">Vārti:</h3>
+            <h3 id="sperma-assist">Assisti:</h3>
+            <h3 id="sperma-foul">Sodi:</h3>
+            <h3 id="sperma-save">Save:</h3>
+        </div>
+        <h2>Komandas Ziņas:</h2>
+        <div class="team-news-container">
+            <div class="team-news-card">
+                <img src="../../img/news-img/Brazil-sign-key-z.png" class="team-news-card-img">
+                <h3 class="team-news-card-text">FK Brazzīši pievieno Key-Z #19!</h3>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    function toggleDropdown() {
+        var dropdown = document.getElementById('dropdown');
+        dropdown.classList.toggle('active');
+        document.body.classList.toggle('dropdown-open'); // Toggle body class to allow scroll
+    }
+</script>
+<script src="../../themeTogglePagesLowest.js"></script>
+</body>
+</html>

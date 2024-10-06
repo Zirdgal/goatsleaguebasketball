@@ -45,4 +45,44 @@
         nr: "#NAV",
         pos: "Player",
     },
+
+    // Ložmetēji komanda
+    "Zibens": {
+        img: "../../img/testimg.png",
+        name: "Zibens",
+        nr: "#NAV",
+        pos: "Captain",
+    },
+    "Oto": {
+        img: "../../img/testimg.png",
+        name: "Oto",
+        nr: "#NAV",
+        pos: "Player",
+    },
+    "Mucinieks": {
+        img: "../../img/testimg.png",
+        name: "Mucinieks",
+        nr: "#NAV",
+        pos: "Player",
+    },
+
+    // Sodiņu Meistari komanda
+    "Edvards": {
+        img: "../../img/testimg.png",
+        name: "Edvards",
+        nr: "#NAV",
+        pos: "Captain",
+    },
+    "Janiga": {
+        img: "../../img/testimg.png",
+        name: "Janiga",
+        nr: "#NAV",
+        pos: "Player",
+    },
+    "Burkans": {
+        img: "../../img/testimg.png",
+        name: "Burkāns",
+        nr: "#NAV",
+        pos: "Player",
+    },
 }
